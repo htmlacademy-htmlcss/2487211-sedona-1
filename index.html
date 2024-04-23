@@ -39,18 +39,19 @@
       </nav>
     </header>
     <main class="main-index">
-      
-      <h1 class=""visually-hidden>Добро пожаловать в Седону!</h1>
-      <img class="logo-welcome" scr="#" alt="Приглашение посетить город Седону">
-     
-      <section class="advantages">
-        <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <section class="hero"> 
+       <img class="logo-hero" scr="#" alt="Приглашение посетить город Седону">
+       <img class="hero-image" scr="#" alt="Красивый вид на горы в окрестностях города Седоны">
+       <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+       <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>  
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-subtitle">Настоящий городок</h3>
             <p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-picture" scr="#" alt="Красивый вид на улицу Седона">
+            <img class="advantages-picture" scr="#" alt="Живописный вид на улицу Седона">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-subtitle">Небольшая площадь</h3>
@@ -78,24 +79,56 @@
         <ul class="service-list">
           <li class="service-item">
             <h3 class="service-subtitle">Жильё</h3>
-            <p class="service">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="service-item">
             <h3 class="service-subtitle">Еда</h3>
-            <p class="service">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="service-item">
             <h3 class="service-subtitle">Сувениры</h3>
-            <p class="service">Не только китайского, но и настоящего местного производства!</p>
+            <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
-      </section>    
+      </section> 
+
       <section class="selection">
         <h2 class="selection-title">Заинтересовались?</h2>
-        <p class="selection">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="selection-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button selection-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input type="e-mail" name="e-mail" placeholder="Ваш e-mail">
+        <button class="button subscription-button" type="submit">Подписаться</button>
+      </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="page-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacadem">
+            <img scr="#" alt="ВКонтакте">
+          </a>
+        </li>
+        <li>
+          <a href=" https://t.me/htmlacademy ">
+            <img scr="#" alt="Telegram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/htmlacademyru">
+            <img scr="#" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+      <address class="contacts">
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    </footer>
   </body>
 </html>
