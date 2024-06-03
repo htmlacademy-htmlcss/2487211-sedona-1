@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    /* font-size: 18px;
+    line-height: 21px; */
+    color: #000000;
+    background-color:#FFFFFF;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-small {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navigation-button, .selection-button, .home-card-button {
+    background-color:#756157;
+}
+
+.wrapper-hero-image {
+    background-image: url("../images/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.hero-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.hero-text {
+   text-align: center;
+}
+
+.advantages-info {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-align: center;
+}
+.advantages-item-description {
+    font-size: 18px;
+    line-height: 21px;
+}
+.advantages-subtitle,  .service-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantages-info-square, .advantages-info-turist {
+    text-align: center;
+    background: #83B3D31F;
+}
+
+.advantages-info-roud {
+    text-align: center;
+    background: #83B3D333;
+}
+
+.service, .selection {
+    text-align: center;
+}
+
+.service-title, .selection-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.servis-backgrond {
+    background: #83B3D31F;
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
+.subscription {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    background-image: url("../images/subscription.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.subscription-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service-subdescription {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.subscription-button, .button-catalog-yes, .home-card-select-button {
+    background: #82B3D3;
+}
+
+.contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.inner-header {
+    color: white;
+    background-color: #000000;
+    background-image: url("../images/filtr.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-filter-item {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.button-catalog-no {
+    background: none;
+}
+
+.catalog-filter-result-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.home-card-item {
+    color: #333333;
+}
+
+.home-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.home-card-rating {
+    background: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pagination-link {
+    background-color: #82B3D3;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-ellipses {
+    font-size: 20px;
+}
+
+.subscription-catalog {
+    text-align: center;
+}
+
+.subscription-description-catalog {
+    color: #333333;
+}

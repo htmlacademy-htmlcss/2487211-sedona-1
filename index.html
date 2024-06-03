@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -35,7 +35,7 @@
             </a>
           </li>
           <li class="navigation-user">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-button button-small" href="#">
               <span>Хочу сюда</span>
             </a>
           </li>
@@ -44,12 +44,16 @@
     </header>
     <main class="main-index">
       <section class="hero">
-       <img class="logo-hero" src="images/logo-welcome.svg" alt="Приглашение посетить город Седону" width="458" height="352">
-       <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-       <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="wrapper-hero-image">
+          <img class="logo-hero" src="images/logo-welcome.svg" alt="Приглашение посетить город Седону" width="458" height="352">
+        </div>
+        <div class="wrapper-hero-text">
+          <h1 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </section>
-        <section class="advantages">
-          <h2 class="visually-hidden">Преимущества</h2>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-info">
@@ -61,19 +65,19 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-info">
+            <div class="advantages-info-square">
               <h3 class="advantages-subtitle">Небольшая площадь</h3>
               <p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-info">
+            <div class="advantages-info-roud">
               <h3 class="advantages-subtitle">Красивая дорога</h3>
               <p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-info">
+            <div class="advantages-info-turist">
               <h3 class="advantages-subtitle">Мало туристов</h3>
               <p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
@@ -95,21 +99,21 @@
         <p class="service-description">Опытный персонал и качественное обслуживание!</p>
         <ul class="service-list">
           <li class="service-item">
-            <div class="service-info">
+            <div class="service-info servis-backgrond">
               <h3 class="service-subtitle">Жильё</h3>
-              <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service-subdescription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
           </li>
           <li class="service-item">
             <div class="service-info">
               <h3 class="service-subtitle">Еда</h3>
-              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-subdescription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="service-item">
-            <div class="service-info">
+            <div class="service-info servis-backgrond">
               <h3 class="service-subtitle">Сувениры</h3>
-              <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-subdescription">Не только китайского, но и настоящего местного производства!</p>
             </div>
           </li>
         </ul>
@@ -118,16 +122,17 @@
       <section class="selection">
         <h2 class="selection-title">Заинтересовались?</h2>
         <p class="selection-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button selection-button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button-big selection-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden">Введите Ваш e-mail<input type="e-mail" name="e-mail" placeholder="Ваш e-mail"></label>
-        <button class="button subscription-button" type="submit">Подписаться</button>
-      </form>
+          <label class="visually-hidden">Введите Ваш e-mail</label>
+          <input type="e-mail" name="e-mail" placeholder="Ваш e-mail">
+          <button class="button-big subscription-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -139,7 +144,7 @@
         </li>
         <li>
           <a href=" https://t.me/htmlacademy ">
-            <img src="images/soсial/telegram.svg" alt="мы в Telegram"width="18" height="15.1" >
+            <img src="images/soсial/telegram.svg" alt="мы в Telegram" width="18" height="15.1" >
           </a>
         </li>
         <li>
@@ -149,7 +154,7 @@
         </li>
       </ul>
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">htmlacademy.ru</a>
     </footer>
   </body>
 </html>
