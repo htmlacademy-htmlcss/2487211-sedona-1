@@ -14,14 +14,26 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
-    /* font-size: 18px;
-    line-height: 21px; */
-    color: #000000;
-    background-color:#FFFFFF;
+    background-color: #F2F2F2;
+}
+
+.conteiner {
+    background-color: #FFFFFF;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .navigation-link {
@@ -42,7 +54,7 @@ body {
 }
 
 .navigation-button, .selection-button, .home-card-button {
-    background-color:#756157;
+    background-color: #756157;
 }
 
 .wrapper-hero-image {
@@ -57,15 +69,16 @@ body {
     font-weight: 700;
     text-align: center;
 }
+
 .hero-text {
    text-align: center;
 }
 
-.advantages-info {
+.block-type-1 {
     color: #FFFFFF;
     background-color: #82B3D3;
-    text-align: center;
 }
+
 .advantages-item-description {
     font-size: 18px;
     line-height: 21px;
@@ -77,17 +90,15 @@ body {
     text-transform: uppercase;
 }
 
-.advantages-info-square, .advantages-info-turist {
-    text-align: center;
-    background: #83B3D31F;
+.block-type-2 {
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-info-roud {
-    text-align: center;
-    background: #83B3D333;
+.block-type-3 {
+    background-color: rgba(131, 179, 211, 0.2);
 }
 
-.service, .selection {
+.service, .selection, .advantages {
     text-align: center;
 }
 
@@ -99,7 +110,7 @@ body {
 }
 
 .servis-backgrond {
-    background: #83B3D31F;
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 .button-big {
@@ -107,7 +118,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 .subscription {
@@ -138,7 +149,7 @@ body {
 }
 
 .subscription-button, .button-catalog-yes, .home-card-select-button {
-    background: #82B3D3;
+    background-color: #82B3D3;
 }
 
 .contacts-phone {
@@ -177,7 +188,7 @@ body {
 }
 
 .catalog-filter-item {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 23px;
 }
 
@@ -233,4 +244,162 @@ body {
 
 .subscription-description-catalog {
     color: #333333;
+}
+
+
+
+.main-container {
+    flex-grow: 1;
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-header {
+    margin-right: 30px;
+    display: block;
+}
+
+.logo-hero {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages-item,  .service-item {
+    display: flex;
+}
+
+.block-total {
+    width: 400px;
+}
+
+.advantages-picture {
+    display: block;
+}
+
+.advantages-image {
+    display: block;
+
+}
+
+.advantages-list, .service-list, .social-list {
+    margin: 0;
+    padding: 0;
+}
+
+.selection-wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.subscription-wrapper {
+    width: 684px;
+    margin: 0 auto;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.social-list {
+    width: 160px;
+}
+
+.htmlacademy-link {
+    max-width: 115px;
+}
+
+.contacts-phone {
+    width: 720px;
+}
+
+.catalog-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-header-wrapper, .catalog-filter-result-wrapper {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.filter-wrapper-left {
+    width: 370.85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-filter-group {
+    width: 150.43px;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filter-group {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-wrapper-right {
+    width: 549px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-catalog {
+    width: 191px;
+}
+
+.price-wrapper {
+    width: 288px;
+}
+
+.type-result {
+    display: flex;
+}
+
+.catalog-filter-result-title {
+    width: 338px;
+    margin-right: 200px;
+}
+
+.select-control {
+    width: 292px;
+}
+
+.view {
+    max-width: 160px;
+    margin-left: auto;
+}
+
+.inner-header-title {
+    margin: 0;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
