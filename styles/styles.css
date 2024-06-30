@@ -27,7 +27,7 @@ body {
     background-color: #F2F2F2;
 }
 
-.conteiner {
+.container {
     background-color: #FFFFFF;
     display: flex;
     min-height: 100%;
@@ -43,6 +43,13 @@ body {
     text-decoration: none;
     font-weight: 700;
     text-align: center;
+    display: block;
+    padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+    min-width: 20px;
+    min-height: 20px;
 }
 
 .button-small {
@@ -61,6 +68,8 @@ body {
     background-image: url("../images/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 
 .hero-title {
@@ -68,10 +77,20 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-align: center;
+    max-width: 660px;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 .hero-text {
    text-align: center;
+   max-width: 660px;
+   margin: auto;
+}
+
+.wrapper-hero-text {
+    padding-top: 69px;
+    padding-bottom: 69px;
 }
 
 .block-type-1 {
@@ -82,12 +101,29 @@ body {
 .advantages-item-description {
     font-size: 18px;
     line-height: 21px;
+    margin: 0 85px 102px 85px;
 }
-.advantages-subtitle,  .service-subtitle {
+
+.service-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 85px 81px 85px;
+}
+
+.advantages-subtitle {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 102px 112.5px 62px 112.5px;
+}
+
+.service-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 85px;
 }
 
 .block-type-2 {
@@ -107,6 +143,27 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.service-title {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 64px;
+    max-width: 505px;
+}
+
+.selection-title {
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+.selection-description {
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.subscription-button {
+    margin-bottom: ;
 }
 
 .servis-backgrond {
@@ -135,11 +192,19 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
-.service-subdescription {
-    font-size: 18px;
-    line-height: 21px;
+.subscription-description {
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.service-description {
+    max-width: 505px;
+    margin: auto;
+    margin-bottom: 64px;
 }
 
 ::placeholder {
@@ -201,6 +266,8 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    width: 338px;
+    margin: 0;
 }
 
 .home-card-item {
@@ -227,6 +294,11 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-decoration: none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 11.36px 23.45px;
 }
 
 .pagination-current {
@@ -246,34 +318,37 @@ body {
     color: #333333;
 }
 
-
-
 .main-container {
     flex-grow: 1;
 }
 
 .navigation {
     display: flex;
-    width: 1060px;
-    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .navigation-list {
     width: 400px;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .navigation-user {
     max-width: 300px;
-    margin-left: auto;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: end;
 }
 
 .logo-header {
     margin-right: 30px;
     display: block;
+    width: 138px;
 }
 
 .logo-hero {
@@ -295,22 +370,24 @@ body {
 
 .advantages-image {
     display: block;
-
 }
 
-.advantages-list, .service-list, .social-list {
+.advantages-list, .service-list, .social-list, .home-list, .pagination {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .selection-wrapper {
     width: 600px;
-    margin: 0 auto;
+    margin: 96px auto;
 }
 
 .subscription-wrapper {
     width: 684px;
     margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 104px;
 }
 
 .page-footer-container {
@@ -318,10 +395,25 @@ body {
     width: 1060px;
     margin: 0 auto;
     justify-content: space-between;
+    padding: 45px 0 35px 0;
 }
 
 .social-list {
-    width: 160px;
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    display: flex;
+    margin-bottom: 8px;
+    width: 48px;
+    height: 40px;
+}
+
+.social-link {
+    display: block;
+    width: 100%;
 }
 
 .htmlacademy-link {
@@ -340,12 +432,8 @@ body {
 .inner-header-wrapper, .catalog-filter-result-wrapper {
     width: 1060px;
     margin: 0 auto;
-}
-
-.filter-wrapper-left {
-    width: 370.85px;
-    display: flex;
-    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 
 .catalog-filter-group {
@@ -362,12 +450,6 @@ body {
     padding: 0;
 }
 
-.filter-wrapper-right {
-    width: 549px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .button-catalog {
     width: 191px;
 }
@@ -378,15 +460,13 @@ body {
 
 .type-result {
     display: flex;
-}
-
-.catalog-filter-result-title {
-    width: 338px;
-    margin-right: 200px;
+    margin-bottom: 40px;
 }
 
 .select-control {
     width: 292px;
+    margin-left: 200px;
+    margin-right: 70px;
 }
 
 .view {
@@ -403,3 +483,57 @@ body {
     padding: 0;
     display: flex;
 }
+
+.page-header {
+    display: flex;
+    padding: 0 70px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-list {
+    display: flex;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.inner-header-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumbs-link {
+    margin-right: 28px;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 80px;
+}
+
+.pagination-item {
+    display: flex;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+  }
