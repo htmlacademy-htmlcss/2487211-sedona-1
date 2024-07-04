@@ -584,7 +584,7 @@ body {
 
 .home-card-rating {
     grid-area: card-rating;
-}
+} */
 
 .home-list {
     display: flex;
@@ -594,7 +594,7 @@ body {
 
 .home-card-image {
     display: block;
-} */
+}
 
 .home-card-item {
     display: grid;
