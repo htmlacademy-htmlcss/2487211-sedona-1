@@ -36,6 +36,17 @@ body {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .navigation-link {
     font-size: 20px;
     line-height: 24px;
@@ -115,7 +126,7 @@ body {
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 102px 112.5px 62px 112.5px;
+    margin: 102px 113px 62px 113px;
 }
 
 .service-subtitle {
@@ -279,6 +290,7 @@ body {
     line-height: 28px;
     font-weight: 700;
     color: #000000;
+    margin: 0;
 }
 
 .home-card-rating {
@@ -298,7 +310,7 @@ body {
     width: 60px;
     height: 60px;
     box-sizing: border-box;
-    padding: 11.36px 23.45px;
+    padding: 12px 23px;
 }
 
 .pagination-current {
@@ -498,17 +510,6 @@ body {
     display: flex;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .inner-header-title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -528,12 +529,98 @@ body {
 .pagination {
     display: flex;
     margin-top: 80px;
+    gap: 8px;
 }
 
 .pagination-item {
     display: flex;
 }
+/*
+ вариант с грид-ареа */
 
-.pagination-item:not(:last-child) {
-    margin-right: 8px;
-  }
+/* .home-card-item {
+    display: grid;
+    grid-template-columns: 140px, 140px;
+    grid-template-areas:
+    "card-image card-image  "
+    "card-title card-title "
+    "card-type card-price  "
+    "card-button card-select-button  "
+    "home-star card-rating ";
+    row-gap: 16px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.card-image {
+    grid-area: card-image;
+}
+
+.home-card-title {
+    grid-area: card-title;
+}
+
+.home-card-type {
+    grid-area: card-type;
+}
+
+.home-card-price{
+    grid-area: card-price;
+    justify-self: right;
+
+}
+
+.home-card-button {
+    grid-area: card-button;
+}
+
+.home-card-select-button {
+    grid-area: card-select-button;
+}
+
+.home-star {
+    grid-area: home-star;
+}
+
+.home-card-rating {
+    grid-area: card-rating;
+} */
+
+.home-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-card-image {
+    display: block;
+}
+
+.home-card-item {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    row-gap: 16px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.card-image {
+    grid-column: 1/-1;
+}
+
+.home-card-title {
+    grid-column: 1/-1;
+}
+
+.home-card-type, .home-card-button,.home-star {
+    grid-column: 1/2;
+}
+
+.home-card-select-button, .home-card-rating {
+    grid-column: 2/3;
+}
+
+.home-card-price {
+    grid-column: 2/3;
+    justify-self: right;
+}
