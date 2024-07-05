@@ -1,0 +1,626 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: #F2F2F2;
+}
+
+.container {
+    background-color: #FFFFFF;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.navigation-link {
+    font-size: 20px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.button-small {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navigation-button, .selection-button, .home-card-button {
+    background-color: #756157;
+}
+
+.wrapper-hero-image {
+    background-image: url("../images/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 51px;
+    padding-bottom: 82px;
+}
+
+.hero-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 660px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+   text-align: center;
+   max-width: 660px;
+   margin: auto;
+}
+
+.wrapper-hero-text {
+    padding-top: 69px;
+    padding-bottom: 69px;
+}
+
+.block-type-1 {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+
+.advantages-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 85px 102px 85px;
+}
+
+.service-item-description {
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0 85px 81px 85px;
+}
+
+.advantages-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 102px 113px 62px 113px;
+}
+
+.service-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 30px 85px;
+}
+
+.block-type-2 {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.block-type-3 {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.service, .selection, .advantages {
+    text-align: center;
+}
+
+.service-title, .selection-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service-title {
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 64px;
+    max-width: 505px;
+}
+
+.selection-title {
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+.selection-description {
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.subscription-button {
+    margin-bottom: ;
+}
+
+.servis-backgrond {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.button-big {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subscription {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    background-image: url("../images/subscription.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.subscription-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.subscription-description {
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.service-description {
+    max-width: 505px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.subscription-button, .button-catalog-yes, .home-card-select-button {
+    background-color: #82B3D3;
+}
+
+.contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+.inner-header {
+    color: white;
+    background-color: #000000;
+    background-image: url("../images/filtr.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.breadcrumbs-link {
+    font-size: 16px;
+    line-height: 21px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-filter-item {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.button-catalog-no {
+    background: none;
+}
+
+.catalog-filter-result-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 338px;
+    margin: 0;
+}
+
+.home-card-item {
+    color: #333333;
+}
+
+.home-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.home-card-rating {
+    background: #F2F2F2;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.pagination-link {
+    background-color: #82B3D3;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 12px 23px;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.pagination-ellipses {
+    font-size: 20px;
+}
+
+.subscription-catalog {
+    text-align: center;
+}
+
+.subscription-description-catalog {
+    color: #333333;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation-list {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.navigation-user {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.logo-header {
+    margin-right: 30px;
+    display: block;
+    width: 138px;
+}
+
+.logo-hero {
+    display: block;
+    margin: 0 auto;
+}
+
+.advantages-item,  .service-item {
+    display: flex;
+}
+
+.block-total {
+    width: 400px;
+}
+
+.advantages-picture {
+    display: block;
+}
+
+.advantages-image {
+    display: block;
+}
+
+.advantages-list, .service-list, .social-list, .home-list, .pagination {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.selection-wrapper {
+    width: 600px;
+    margin: 96px auto;
+}
+
+.subscription-wrapper {
+    width: 684px;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 45px 0 35px 0;
+}
+
+.social-list {
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    display: flex;
+    margin-bottom: 8px;
+    width: 48px;
+    height: 40px;
+}
+
+.social-link {
+    display: block;
+    width: 100%;
+}
+
+.htmlacademy-link {
+    max-width: 115px;
+}
+
+.contacts-phone {
+    width: 720px;
+}
+
+.catalog-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-header-wrapper, .catalog-filter-result-wrapper {
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.catalog-filter-group {
+    width: 150.43px;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-filter-group {
+    margin: 0;
+    padding: 0;
+}
+
+.button-catalog {
+    width: 191px;
+}
+
+.price-wrapper {
+    width: 288px;
+}
+
+.type-result {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.select-control {
+    width: 292px;
+    margin-left: 200px;
+    margin-right: 70px;
+}
+
+.view {
+    max-width: 160px;
+    margin-left: auto;
+}
+
+.inner-header-title {
+    margin: 0;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.page-header {
+    display: flex;
+    padding: 0 70px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-list {
+    display: flex;
+}
+
+.inner-header-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumbs-link {
+    margin-right: 28px;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 80px;
+    gap: 8px;
+}
+
+.pagination-item {
+    display: flex;
+}
+/*
+ вариант с грид-ареа */
+
+/* .home-card-item {
+    display: grid;
+    grid-template-columns: 140px, 140px;
+    grid-template-areas:
+    "card-image card-image  "
+    "card-title card-title "
+    "card-type card-price  "
+    "card-button card-select-button  "
+    "home-star card-rating ";
+    row-gap: 16px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.card-image {
+    grid-area: card-image;
+}
+
+.home-card-title {
+    grid-area: card-title;
+}
+
+.home-card-type {
+    grid-area: card-type;
+}
+
+.home-card-price{
+    grid-area: card-price;
+    justify-self: right;
+
+}
+
+.home-card-button {
+    grid-area: card-button;
+}
+
+.home-card-select-button {
+    grid-area: card-select-button;
+}
+
+.home-star {
+    grid-area: home-star;
+}
+
+.home-card-rating {
+    grid-area: card-rating;
+} */
+
+.home-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home-card-image {
+    display: block;
+}
+
+.home-card-item {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    row-gap: 16px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.card-image {
+    grid-column: 1/-1;
+}
+
+.home-card-title {
+    grid-column: 1/-1;
+}
+
+.home-card-type, .home-card-button,.home-star {
+    grid-column: 1/2;
+}
+
+.home-card-select-button, .home-card-rating {
+    grid-column: 2/3;
+}
+
+.home-card-price {
+    grid-column: 2/3;
+    justify-self: right;
+}
