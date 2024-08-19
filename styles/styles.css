@@ -391,6 +391,14 @@ body {
     background-color:#F2F2F2;
 }
 
+.pagination-ellipses:hover {
+    background-color: #FFFFFF;
+}
+
+.pagination-ellipses:focus {
+    background-color #FFFFFF;
+}
+
 .subscription-catalog {
     text-align: center;
 }
@@ -566,6 +574,8 @@ body {
     background-size: 12px 7px;
     background-position: right 21px center ;
     padding-right: 40px;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .select-control:hover {
@@ -766,6 +776,7 @@ body {
 
 .selection-button {
     padding: 8px 50px;
+    margin: auto;
 }
 
 .subscription-form {
@@ -775,18 +786,26 @@ body {
 
 .subscription-button {
     width: 232px;
+    height: 52px;
     border-radius: 0 4px 4px 0;
     border: 0;
+    padding: 0;
     text-align: center;
-    padding: 8px 0;
+    margin: auto;
   }
 
   .enter-e-mail {
     width: 452px;
+    height: 52px;
     border-radius: 4px 0 0 4px;
     border: 0;
-    padding: 12px 20px 12px 20px;
     box-sizing: border-box;
+    font-size: 18px;
+    line-height: 24px;
+    margin: auto;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
  }
 
  .enter-e-mail-background {
@@ -1008,10 +1027,6 @@ body {
     right: 0
 }
 
-.range-label {
-    display: flex;
-}
-
 .catalog-filter-group {
     margin: 0;
     padding: 0;
@@ -1029,11 +1044,27 @@ body {
     height: 48px;
     margin: 0;
     border: none;
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     padding-right: 20px;
     padding-left: 20px;
     display: flex;
     border-radius: 4px 0px 0px 4px;
+}
+
+.range-label:has(.range-input:hover) {
+    background-color: #E6E6E6;
+}
+
+.range-input:hover {
+    background-color: #E6E6E6;
+}
+
+.range-input:focus {
+    outline: none;
+}
+
+.range-label:has(.range-input:focus) {
+    outline: 2px solid #000;
 }
 
 .range-input {
@@ -1042,8 +1073,11 @@ body {
     line-height: 24px;
     font-weight: 700;
     margin: 0;
-    width: 90px;
+    padding: 0;
+    width: 80px;
     appearance: textfield;
+    padding-right: 10px;
+    background-color: #F2F2F2;
 }
 
 .range-text {
@@ -1068,6 +1102,7 @@ body {
     display: flex;
     padding-left: 36px;
     height: 23px;
+    cursor: pointer;
 }
 
 .control-mark {
@@ -1386,5 +1421,10 @@ body {
 }
 
 .modal-button-number:hover + .minus-plus-icon {
-    color: red;;
+    color: #000000;
+}
+
+.enter-e-mail:focus {
+    outline: none;
+    border: 2px solid #000;
 }
