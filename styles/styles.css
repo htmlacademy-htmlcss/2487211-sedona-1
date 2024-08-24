@@ -79,11 +79,11 @@ body {
 .wrapper-hero-image {
     background-image: url("../images/image-hero.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
     padding-top: 51px;
     padding-bottom: 82px;
-    position: relative;
     background-size: cover;
+    position: relative;
+
 }
 
 .hero-title {
@@ -192,6 +192,7 @@ body {
     border-radius: 4px;
     border: 0;
     display: block;
+    cursor: pointer;
 }
 
 .subscription {
@@ -1175,6 +1176,7 @@ body {
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
     display: flex;
+    z-index: 3;
  }
 
 .modal {
@@ -1312,6 +1314,15 @@ body {
     margin: 0;
 }
 
+.wrapper-number:hover {
+    background-color: #E6E6E6;
+}
+
+
+.wrapper-number:hover {
+    background-color: #E6E6E6;
+}
+
 .wrapper-number-adult {
     grid-column: 2/3;
     position: relative;
@@ -1352,18 +1363,20 @@ body {
    padding: 0;
    margin: 0;
    display: block;
-   background-color: none;
+   background-color: #83B3D3;
+   border-radius: 50%;
+   height: 26px;
+   width: 26px;
+
 }
 
 .tooltip-icon {
-   background-color: #83B3D3;
-   border-radius: 50%;
    width: 100%;
    height: 100%;
    display: block;
 }
 
-.tooltip-toggle:hover .tooltip-icon {
+.tooltip-toggle:hover {
    background-color: #68A2CA;
 }
 
@@ -1374,7 +1387,6 @@ body {
    line-height: 20px;
    padding: 15px 18px 18px 22px;
    border-radius: 10px;
-   display: block;
    width: 256px;
    filter: drop-shadow (0 15px 30px rgba(0, 0, 0, 0.3));
    position: absolute;
@@ -1388,12 +1400,9 @@ body {
 }
 
 .tooltip {
-    position: absolute;
-    margin-bottom: 1px;
-    margin-left: 59px;
-    width: 20px;
-    height: 20px;
-  }
+   margin-left: 10px;
+   position: relative;
+}
 
 .info-block {
     font-size: 16px;
