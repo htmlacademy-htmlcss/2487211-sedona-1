@@ -83,6 +83,7 @@ body {
     padding-top: 51px;
     padding-bottom: 82px;
     position: relative;
+    background-size: cover;
 }
 
 .hero-title {
@@ -199,7 +200,7 @@ body {
     background-color: #000000;
     background-image: url("../images/subscription.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 .subscription-title {
@@ -261,7 +262,7 @@ body {
     background-color: #000000;
     background-image: url("../images/filtr.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 .inner-header-title {
@@ -328,9 +329,7 @@ body {
     margin: 0;
 }
 
-.home-card-item {
-    color: #333333;
-}
+
 
 .home-card-title {
     font-size: 24px;
@@ -459,10 +458,14 @@ body {
 
 .advantages-picture {
     display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .advantages-image {
     display: block;
+    height: 100%;
 }
 
 .advantages-list, .service-list, .social-list, .home-list, .pagination {
@@ -576,6 +579,7 @@ body {
     padding-right: 40px;
     font-size: 18px;
     line-height: 21px;
+    height: 49px;
 }
 
 .select-control:hover {
@@ -594,6 +598,7 @@ body {
 .view {
     max-width: 160px;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
@@ -616,6 +621,7 @@ body {
     padding: 0;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 40px;
 }
@@ -698,6 +704,9 @@ body {
     row-gap: 16px;
     column-gap: 20px;
     padding: 20px;
+    outline: 1px solid #E6E6E6;
+    color: #333333;
+    width: 300px;
 }
 
 .card-image {
@@ -830,6 +839,8 @@ body {
     background-size: 16px 14px;
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
+
 }
 
 .button-view:hover {
@@ -1220,6 +1231,7 @@ body {
     background-size: 20px 20px;
     background-position: right 20px center;
     height: 48px;
+
 }
 
 .modal-input {
@@ -1234,6 +1246,7 @@ body {
     line-height: 24px;
     font-weight: 700;
     width: 100%;
+    padding-right: 60px;
 }
 
 .button-modal {
@@ -1339,6 +1352,7 @@ body {
    padding: 0;
    margin: 0;
    display: block;
+   background-color: none;
 }
 
 .tooltip-icon {

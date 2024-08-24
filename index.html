@@ -88,7 +88,7 @@
               </div>
               <div class="block-total block-type-1">
                 <h3 class="advantages-subtitle line-type-1">Там есть мост дьявола</h3>
-                 <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
           </ul>
@@ -171,6 +171,60 @@
           </a>
         </div>
       </footer>
+      <div class="modal-conteiner modal-container-close">modal-container-close
+        <div class="modal">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close-icon" fill="currentColor" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17 4.3 15.7 3 10 8.7 4.3 3 3 4.3 8.7 10 3 15.7 4.3 17l5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7L17 4.3Z" /></svg>
+          </button>
+          <section class="modal-content">
+            <form class="modal-seach-form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="modal-seach-condition">
+                <legend class="modal-title">Поиск гостиниц в седоне</legend>
+                <label for="date-arrival" class="label-condition">Дата Заезда: </label>
+                <div class="wrapper-date">
+                  <input id="date-arrival" class="enter-date modal-input" type="text" name="arrival" placeholder="Укажите дату">
+                  <p class="info-block info-error">Мы не можем отправить вас в прошлое.</p>
+                </div>
+                <label for="date-departure" class="label-condition">Дата Выезда:</label>
+                <div class="wrapper-date">
+                  <input id="date-departure" class="enter-date modal-input" type="text" name="departure" placeholder="Укажите дату">
+                  <p class="info-block free-date">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+                <label for="number-adult" class="label-condition">Взрослые:</label>
+                <div class="wrapper-number wrapper-number-adult">
+                  <button class="modal-button-number" type="button">
+                    <svg class="minus-plus-icon" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg>
+                  </button>
+                  <input id="number-adult" class="modal-input input-adult input-number" type="number" name="adult" placeholder="2">
+                  <button class="modal-button-number" type="button">
+                    <svg class="minus-plus-icon" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                  </button>
+                </div>
+                <span class="label-condition label-children">
+                  <label for="number-children" class="label-condition label-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#fff" fill-rule="evenodd" d="M9 4h2v2H9V4Zm2 12H9V7h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                 <div class="wrapper-number wrapper-number-children">
+                    <button class="modal-button-number" type="button">
+                      <svg class="minus-plus-icon" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-opacity=".3" d="M3 9v2h14V9H3Z"/></svg>
+                    </button>
+                    <input id="number-children" class="modal-input input-number" type="number" name="children" placeholder="2">
+                    <button class="modal-button-number" type="button">
+                      <svg class="minus-plus-icon" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+                    </button>
+                  </div>
+                  <button class="button-blue button-big button-modal" type="submit">Найти</button>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
