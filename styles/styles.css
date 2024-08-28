@@ -85,7 +85,6 @@ body {
     padding-bottom: 82px;
     background-size: cover;
     position: relative;
-
 }
 
 .hero-title {
@@ -224,7 +223,6 @@ body {
 }
 
 .subscription-description {
-    margin: 0;
     width: 475px;
     margin: auto;
     margin-bottom: 54px;
@@ -341,8 +339,6 @@ body {
     margin: auto;
 }
 
-
-
 .home-card-title {
     font-size: 24px;
     line-height: 28px;
@@ -407,7 +403,7 @@ body {
 }
 
 .pagination-ellipses:focus {
-    background-color #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .subscription-catalog {
@@ -472,7 +468,6 @@ body {
 .advantages-picture {
     display: block;
     object-fit: cover;
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -618,7 +613,6 @@ body {
 .page-header {
     display: flex;
     padding: 0 70px;
-
 }
 
 .advantages-list {
@@ -651,56 +645,6 @@ body {
     width: 60px;
     height: 60px;
 }
-/*
- вариант с грид-ареа */
-
-/* .home-card-item {
-    display: grid;
-    grid-template-columns: 140px, 140px;
-    grid-template-areas:
-    "card-image card-image  "
-    "card-title card-title "
-    "card-type card-price  "
-    "card-button card-select-button  "
-    "home-star card-rating ";
-    row-gap: 16px;
-    column-gap: 20px;
-    padding: 20px;
-}
-
-.card-image {
-    grid-area: card-image;
-}
-
-.home-card-title {
-    grid-area: card-title;
-}
-
-.home-card-type {
-    grid-area: card-type;
-}
-
-.home-card-price{
-    grid-area: card-price;
-    justify-self: right;
-
-}
-
-.home-card-button {
-    grid-area: card-button;
-}
-
-.home-card-select-button {
-    grid-area: card-select-button;
-}
-
-.home-star {
-    grid-area: home-star;
-}
-
-.home-card-rating {
-    grid-area: card-rating;
-} */
 
 .home-list {
     display: flex;
@@ -805,12 +749,10 @@ body {
 }
 
 .selection-button {
-    /* margin-left: 108px;
-    margin-right: 108px; */
     width: 376px;
     height: 52px;
     padding: 8px 0;
-      margin: auto;
+    margin: auto;
 }
 
 .subscription-form {
@@ -1141,7 +1083,7 @@ body {
 }
 
 .range-label-right {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1226,8 +1168,7 @@ body {
     border-radius: 30px;
     background-color: #FFFFFF;
     width: 577px;
-    /* margin-top: 396px; */
-  }
+}
 
 .modal-container-close {
    display: none;
@@ -1274,7 +1215,6 @@ body {
     background-size: 20px 20px;
     background-position: right 20px center;
     height: 48px;
-
 }
 
 .modal-input {
@@ -1433,7 +1373,6 @@ body {
    width: 256px;
    filter: drop-shadow (0 15px 30px rgba(0, 0, 0, 0.3));
    position: absolute;
-   top: 100%;
    margin-top: 9px;
    left: 50%;
    transform: translateX(-50%);
