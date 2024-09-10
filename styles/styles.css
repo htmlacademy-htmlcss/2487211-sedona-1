@@ -251,36 +251,6 @@ body {
   margin-bottom: 64px;
 }
 
-.enter-e-mail::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.enter-e-mail::-moz-placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.enter-e-mail:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.enter-e-mail::-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.enter-e-mail::placeholder {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
 .button-catalog-yes {
   width: 191px;
   font-weight: 700;
@@ -972,10 +942,9 @@ body {
   border-radius: 4px 0 0 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font: inherit;
   font-size: 18px;
   line-height: 24px;
-  margin: auto;
-  padding: 0;
   padding-left: 20px;
   padding-right: 20px;
   border: 2px solid transparent;
@@ -1584,7 +1553,7 @@ input[type="number"]:focus {
 .modal-close-button {
  position: absolute;
  padding: 0;
- top: 64px;
+ top: 66px;
  right: 52px;
  width: 52px;
  height: 52px;
