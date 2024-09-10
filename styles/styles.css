@@ -1705,6 +1705,6 @@ input[type="number"]:focus {
   line-height: 21px;
 }
 
-option {
+.select-type {
   background-color: #ffffff;
 }
